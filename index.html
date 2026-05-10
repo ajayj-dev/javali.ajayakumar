@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ajju - AI/ML Developer & Cloud Enthusiast Portfolio">
+    <title>Ajju | AI/ML Developer & Cloud Enthusiast</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Vanilla Tilt -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-ring"></div>
+            <div class="preloader-text">Loading</div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Mouse Glow -->
+    <div class="mouse-glow" id="mouse-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">AJJU</span>
+                <span class="logo-dot"></span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <canvas class="particles-canvas" id="particles-canvas"></canvas>
+        <div class="hero-bg">
+            <div class="grid-pattern"></div>
+            <div class="gradient-orb gradient-orb-1"></div>
+            <div class="gradient-orb gradient-orb-2"></div>
+            <div class="gradient-orb gradient-orb-3"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">
+                    <span class="name-main">Ajju</span>
+                    <span class="name-glitch" data-text="Ajju">Ajju</span>
+                </h1>
+                <div class="hero-title-wrapper">
+                    <span class="hero-title-prefix">AI/ML Developer &</span>
+                    <span class="hero-title typing-text" id="typing-text"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Building intelligent solutions with cutting-edge AI/ML technologies
+                    and cloud infrastructure. Let's shape the future together.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Contact Me</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="floating-shapes">
+                    <div class="shape shape-1">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="shape shape-2">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="shape shape-3">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="shape shape-4">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Get to Know <span class="highlight">Me</span></h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image reveal">
+                    <div class="profile-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+                        <div class="profile-image">
+                            <div class="profile-placeholder">
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                            <div class="profile-glow"></div>
+                        </div>
+                        <div class="profile-info">
+                            <h3>AI/ML Developer</h3>
+                            <p>Cloud Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-text reveal">
+                    <h3>Passionate about AI & Innovation</h3>
+                    <p>
+                        I'm a dedicated AI/ML Developer and Cloud Enthusiast with a strong focus on
+                        building intelligent solutions. My expertise lies in developing AI-powered
+                        applications, machine learning models, and scalable cloud architectures.
+                    </p>
+                    <p>
+                        With hands-on experience in modern AI frameworks and cloud platforms, I
+                        transform complex problems into elegant, efficient solutions. I believe
+                        in the power of technology to create meaningful impact.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-badges">
+                        <span class="badge"><i class="fab fa-python"></i> Python</span>
+                        <span class="badge"><i class="fas fa-brain"></i> AI/ML</span>
+                        <span class="badge"><i class="fab fa-aws"></i> AWS</span>
+                        <span class="badge"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="badge"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="badge"><i class="fas fa-cloud"></i> Cloud</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-progress">
+                <div class="skill-bar reveal">
+                    <div class="skill-info">
+                        <span>Python & AI/ML</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" data-width="95"></div>
+                    </div>
+                </div>
+                <div class="skill-bar reveal">
+                    <div class="skill-info">
+                        <span>Cloud & DevOps</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-bar reveal">
+                    <div class="skill-info">
+                        <span>Web Development</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-bar reveal">
+                    <div class="skill-info">
+                        <span>Problem Solving</span>
+                        <span class="skill-percentage">92%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" data-width="92"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Projects</span>
+                <h2 class="section-title">Featured <span class="highlight">Work</span></h2>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card reveal" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span>CLI Tool</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AfterTask CLI</h3>
+                        <p>A powerful command-line interface tool for efficient task management and productivity enhancement.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>CLI</span>
+                            <span>Automation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link" title="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span>Programming Language</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AfterX Language</h3>
+                        <p>A custom-built programming language with unique syntax and powerful capabilities.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Interpreter</span>
+                            <span>Language Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link" title="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span>AI Application</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Chatbot Website</h3>
+                        <p>Intelligent conversational AI chatbot with natural language processing capabilities.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>NLP</span>
+                            <span>Web</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link" title="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span>Platform</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Waste Management</h3>
+                        <p>A comprehensive platform for managing electronic waste and promoting environmental sustainability.</p>
+                        <div class="project-tags">
+                            <span>Full Stack</span>
+                            <span>Database</span>
+                            <span>Sustainability</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link" title="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span>Legal Tech</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Legal Assistance Chatbot</h3>
+                        <p>AI-powered chatbot providing legal guidance and assistance using advanced NLP models.</p>
+                        <div class="project-tags">
+                            <span>AI/ML</span>
+                            <span>NLP</span>
+                            <span>Legal Tech</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link" title="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span>Bot</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Telegram Study Bot</h3>
+                        <p>Educational Telegram bot providing study materials, quizzes, and learning resources.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Telegram API</span>
+                            <span>Education</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link" title="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Skills</span>
+                <h2 class="section-title">Technical <span class="highlight">Expertise</span></h2>
+            </div>
+
+            <div class="skills-categories">
+                <div class="skill-category reveal">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="circular-skill" data-percentage="95">
+                                <svg viewBox="0 0 100 100">
+                                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                    <circle class="progress" cx="50" cy="50" r="45"></circle>
+                                </svg>
+                                <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            </div>
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="circular-skill" data-percentage="85">
+                                <svg viewBox="0 0 100 100">
+                                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                    <circle class="progress" cx="50" cy="50" r="45"></circle>
+                                </svg>
+                                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            </div>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="circular-skill" data-percentage="80">
+                                <svg viewBox="0 0 100 100">
+                                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                    <circle class="progress" cx="50" cy="50" r="45"></circle>
+                                </svg>
+                                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            </div>
+                            <span class="skill-name">C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="circular-skill" data-percentage="75">
+                                <svg viewBox="0 0 100 100">
+                                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                    <circle class="progress" cx="50" cy="50" r="45"></circle>
+                                </svg>
+                                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            </div>
+                            <span class="skill-name">HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3>AI/ML & Data Science</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="circular-skill" data-percentage="90">
+                                <svg viewBox="0 0 100 100">
+                                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                    <circle class="progress" cx="50" cy="50" r="45"></circle>
+                                </svg>
+                                <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                            </div>
+                            <span class="skill-name">Machine Learning</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="circular-skill" data-percentage="88">
+                                <svg viewBox="0 0 100 100">
+                                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                    <circle class="progress" cx="50" cy="50" r="45"></circle>
+                                </svg>
+                                <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                            </div>
+                            <span class="skill-name">Deep Learning</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="circular-skill" data-percentage="85">
+                                <svg viewBox="0 0 100 100">
+                                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                    <circle class="progress" cx="50" cy="50" r="45"></circle>
+                                </svg>
+                                <div class="skill-icon"><i class="fas fa-language"></i></div>
+                            </div>
+                            <span class="skill-name">NLP</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="circular-skill" data-percentage="82">
+                                <svg viewBox="0 0 100 100">
+                                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                    <circle class="progress" cx="50" cy="50" r="45"></circle>
+                                </svg>
+                                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            </div>
+                            <span class="skill-name">Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="circular-skill" data-percentage="88">
+                                <svg viewBox="0 0 100 100">
+                                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                    <circle class="progress" cx="50" cy="50" r="45"></circle>
+                                </svg>
+                                <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                            </div>
+                            <span class="skill-name">AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="circular-skill" data-percentage="85">
+                                <svg viewBox="0 0 100 100">
+                                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                    <circle class="progress" cx="50" cy="50" r="45"></circle>
+                                </svg>
+                                <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                            </div>
+                            <span class="skill-name">Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="circular-skill" data-percentage="80">
+                                <svg viewBox="0 0 100 100">
+                                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                    <circle class="progress" cx="50" cy="50" r="45"></circle>
+                                </svg>
+                                <div class="skill-icon"><i class="fab fa-linux"></i></div>
+                            </div>
+                            <span class="skill-name">Linux</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="circular-skill" data-percentage="82">
+                                <svg viewBox="0 0 100 100">
+                                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                    <circle class="progress" cx="50" cy="50" r="45"></circle>
+                                </svg>
+                                <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            </div>
+                            <span class="skill-name">Git</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3>Frameworks & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="circular-skill" data-percentage="85">
+                                <svg viewBox="0 0 100 100">
+                                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                    <circle class="progress" cx="50" cy="50" r="45"></circle>
+                                </svg>
+                                <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            </div>
+                            <span class="skill-name">React</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="circular-skill" data-percentage="83">
+                                <svg viewBox="0 0 100 100">
+                                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                    <circle class="progress" cx="50" cy="50" r="45"></circle>
+                                </svg>
+                                <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            </div>
+                            <span class="skill-name">Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="circular-skill" data-percentage="78">
+                                <svg viewBox="0 0 100 100">
+                                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                    <circle class="progress" cx="50" cy="50" r="45"></circle>
+                                </svg>
+                                <div class="skill-icon"><i class="fas fa-flask"></i></div>
+                            </div>
+                            <span class="skill-name">TensorFlow</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="circular-skill" data-percentage="76">
+                                <svg viewBox="0 0 100 100">
+                                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                    <circle class="progress" cx="50" cy="50" r="45"></circle>
+                                </svg>
+                                <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                            </div>
+                            <span class="skill-name">PyTorch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="floating-icons">
+                <div class="floating-icon" style="--delay: 0s; --x: 10%; --y: 20%;">
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 1s; --x: 85%; --y: 15%;">
+                    <i class="fab fa-aws"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 2s; --x: 75%; --y: 70%;">
+                    <i class="fab fa-docker"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 0.5s; --x: 20%; --y: 75%;">
+                    <i class="fab fa-js"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 1.5s; --x: 90%; --y: 45%;">
+                    <i class="fab fa-react"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 2.5s; --x: 5%; --y: 50%;">
+                    <i class="fab fa-linux"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Services</span>
+                <h2 class="section-title">What I <span class="highlight">Offer</span></h2>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card reveal" data-tilt data-tilt-max="8" data-tilt-speed="400">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Development</h3>
+                    <p>Custom machine learning models, neural networks, and intelligent systems tailored to your business needs.</p>
+                    <ul class="service-features">
+                        <li>Machine Learning Models</li>
+                        <li>Deep Learning Solutions</li>
+                        <li>AI Integration</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card reveal" data-tilt data-tilt-max="8" data-tilt-speed="400">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Modern, responsive, and高性能 websites and web applications built with cutting-edge technologies.</p>
+                    <ul class="service-features">
+                        <li>Full-Stack Development</li>
+                        <li>Responsive Design</li>
+                        <li>API Development</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card reveal" data-tilt data-tilt-max="8" data-tilt-speed="400">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Scalable cloud infrastructure and migration services using AWS and modern DevOps practices.</p>
+                    <ul class="service-features">
+                        <li>AWS Architecture</li>
+                        <li>Cloud Migration</li>
+                        <li>Infrastructure as Code</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card reveal" data-tilt data-tilt-max="8" data-tilt-speed="400">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Automation Tools</h3>
+                    <p>Streamline your workflows with custom automation solutions that boost productivity and efficiency.</p>
+                    <ul class="service-features">
+                        <li>Process Automation</li>
+                        <li>Script Development</li>
+                        <li>Workflow Optimization</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card reveal" data-tilt data-tilt-max="8" data-tilt-speed="400">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful, intuitive user interfaces that provide exceptional user experiences across all devices.</p>
+                    <ul class="service-features">
+                        <li>Interface Design</li>
+                        <li>User Experience</li>
+                        <li>Prototyping</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card reveal" data-tilt data-tilt-max="8" data-tilt-speed="400">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Chatbot Development</h3>
+                    <p>Intelligent conversational AI chatbots for customer service, lead generation, and virtual assistance.</p>
+                    <ul class="service-features">
+                        <li>NLP Chatbots</li>
+                        <li>Voice Assistants</li>
+                        <li>Integration</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info reveal">
+                    <h3>Let's Work Together</h3>
+                    <p>Have a project in mind or want to collaborate? Feel free to reach out. I'm always open to discussing new opportunities and ideas.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">Email</span>
+                                <span class="value">ajju@example.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">Location</span>
+                                <span class="value">India</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">Availability</span>
+                                <span class="value available">Open to Work</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper reveal">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Your Name</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">Email Address</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required placeholder=" ">
+                            <label for="subject">Subject</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required placeholder=" " rows="5"></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon">
+                                <i class="fas fa-paper-plane"></i>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-glow"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-text">AJJU</span>
+                        <span class="logo-dot"></span>
+                    </a>
+                    <p>Building the future with AI/ML & Cloud</p>
+                </div>
+
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="footer-social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="footer-social-link" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="footer-social-link" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ajju. All Rights Reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> and <i class="fas fa-robot"></i></p>
+            </div>
+        </div>
+
+        <a href="#home" class="back-to-top" id="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
